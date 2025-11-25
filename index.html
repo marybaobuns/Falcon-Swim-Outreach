@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon Swim Outreach</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-pattern { 
+            background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-cyan-50">
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-gradient-to-b from-blue-600 to-cyan-500 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 hero-pattern"></div>
+        
+        <div class="relative z-10 text-center max-w-4xl">
+            <h1 class="text-7xl font-bold mb-6 tracking-tight">
+                Falcon<br/>Swim<br/>Outreach
+            </h1>
+            
+            <p class="text-xl leading-relaxed mb-8 max-w-2xl mx-auto">
+                We are a group of high school students from The Peddie School's Varsity Swim Team 
+                committed to making swimming accessible to all children. Through free lessons for kids 
+                ages 4-13, we're breaking down barriers and building water safety skills in our community.
+            </p>
+            
+            <a href="#info" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg">
+                LEARN MORE
+            </a>
+        </div>
+        
+        <div class="absolute bottom-8 animate-bounce">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section id="info" class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-white">
+        <h2 class="text-5xl font-bold text-blue-600 mb-6">Information</h2>
+        <p class="text-xl text-gray-700 mb-12 max-w-3xl text-center">
+            Click each icon to learn more about our program and to see if your child qualifies for our swim lessons!
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
+            <!-- Schedule Card -->
+            <a href="#schedule" class="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 text-white group block text-center">
+                <svg class="w-16 h-16 mb-4 mx-auto group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <h3 class="text-2xl font-bold mb-2">Schedule</h3>
+                <p class="text-blue-100">View our lesson calendar</p>
+            </a>
+
+            <!-- Qualify Card -->
+            <a href="#qualify" class="bg-gradient-to-br from-cyan-500 to-cyan-600 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 text-white group block text-center">
+                <svg class="w-16 h-16 mb-4 mx-auto group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h3 class="text-2xl font-bold mb-2">Do I qualify?</h3>
+                <p class="text-cyan-100">Check eligibility requirements</p>
+            </a>
+
+            <!-- Sign Up Card -->
+            <a href="#signup" class="bg-gradient-to-br from-teal-500 to-teal-600 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 text-white group block text-center">
+                <svg class="w-16 h-16 mb-4 mx-auto group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <h3 class="text-2xl font-bold mb-2">How to sign up</h3>
+                <p class="text-teal-100">Register for lessons</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-br from-blue-50 to-white">
+        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-5xl font-bold text-blue-600 mb-8">LOCATION</h2>
+                <div class="bg-white p-8 rounded-3xl shadow-xl">
+                    <div class="flex items-start mb-6">
+                        <svg class="w-8 h-8 text-blue-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Peddie Aquatic Center</h3>
+                            <p class="text-gray-600">155 Etra Road<br/>Hightstown, NJ 08520</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-xl font-bold text-gray-800 mb-4">Directions</h4>
+                        <div class="space-y-3 text-gray-700">
+                            <p class="font-semibold text-blue-600">From the New Jersey Turnpike</p>
+                            <p>• Take Exit 8 to Route 33 West/Hightstown</p>
+                            <p>• Take an immediate left onto Davison Road</p>
+                            <p>• At the end of Davison, turn left onto Ward Street</p>
+                            <p>• At the end of Ward, turn right onto Etra Road (Route 571)</p>
+                            <p>• The Athletic Center parking lot is several hundred yards up on right</p>
+                            <p>• Enter through the front of the building</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://maps.google.com/?q=155+Etra+Road+Hightstown+NJ+08520" target="_blank" class="mt-8 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all w-full font-semibold inline-block text-center">
+                        Open in Maps
+                    </a>
+                </div>
+            </div>
+            
+            <div class="bg-gray-200 rounded-3xl h-96 flex items-center justify-center shadow-xl">
+                <svg class="w-24 h-24 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-white">
+        <h2 class="text-5xl font-bold text-blue-600 mb-4">SCHEDULE</h2>
+        <p class="text-2xl text-gray-700 mb-12">Winter Cohort 2025-2026</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
+            <!-- December -->
+            <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-6 rounded-3xl shadow-xl text-white">
+                <h3 class="text-2xl font-bold mb-4 text-center">DECEMBER</h3>
+                <div class="bg-white bg-opacity-20 rounded-xl p-4">
+                    <div class="grid grid-cols-7 gap-2 text-center text-sm mb-2 font-bold">
+                        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+                    </div>
+                    <div class="grid grid-cols-7 gap-2 text-center text-sm">
+                        <div class="py-2">1</div><div class="py-2">2</div><div class="py-2">3</div><div class="py-2">4</div><div class="py-2">5</div><div class="py-2">6</div>
+                        <div class="py-2 rounded bg-yellow-400 text-blue-900 font-bold">7</div>
+                        <div class="py-2">8</div><div class="py-2">9</div><div class="py-2">10</div><div class="py-2">11</div><div class="py-2">12</div><div class="py-2">13</div><div class="py-2">14</div>
+                        <div class="py-2">15</div><div class="py-2">16</div><div class="py-2">17</div><div class="py-2">18</div><div class="py-2">19</div><div class="py-2">20</div><div class="py-2">21</div>
+                        <div class="py-2">22</div><div class="py-2">23</div><div class="py-2">24</div><div class="py-2">25</div><div class="py-2">26</div><div class="py-2">27</div><div class="py-2">28</div>
+                        <div class="py-2">29</div><div class="py-2">30</div><div class="py-2">31</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- January -->
+            <div class="bg-gradient-to-br from-cyan-500 to-cyan-600 p-6 rounded-3xl shadow-xl text-white">
+                <h3 class="text-2xl font-bold mb-4 text-center">JANUARY</h3>
+                <div class="bg-white bg-opacity-20 rounded-xl p-4">
+                    <div class="grid grid-cols-7 gap-2 text-center text-sm mb-2 font-bold">
+                        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+                    </div>
+                    <div class="grid grid-cols-7 gap-2 text-center text-sm">
+                        <div class="py-2"></div><div class="py-2"></div><div class="py-2"></div><div class="py-2">1</div><div class="py-2">2</div><div class="py-2">3</div><div class="py-2">4</div>
+                        <div class="py-2">5</div><div class="py-2">6</div><div class="py-2">7</div><div class="py-2">8</div><div class="py-2">9</div><div class="py-2">10</div>
+                        <div class="py-2 rounded bg-yellow-400 text-cyan-900 font-bold">11</div>
+                        <div class="py-2">12</div><div class="py-2">13</div><div class="py-2">14</div><div class="py-2">15</div><div class="py-2">16</div><div class="py-2">17</div><div class="py-2">18</div>
+                        <div class="py-2">19</div><div class="py-2">20</div><div class="py-2">21</div><div class="py-2">22</div><div class="py-2">23</div><div class="py-2">24</div>
+                        <div class="py-2 rounded bg-yellow-400 text-cyan-900 font-bold">25</div>
+                        <div class="py-2">26</div><div class="py-2">27</div><div class="py-2">28</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- February -->
+            <div class="bg-gradient-to-br from-teal-500 to-teal-600 p-6 rounded-3xl shadow-xl text-white">
+                <h3 class="text-2xl font-bold mb-4 text-center">FEBRUARY</h3>
+                <div class="bg-white bg-opacity-20 rounded-xl p-4">
+                    <div class="grid grid-cols-7 gap-2 text-center text-sm mb-2 font-bold">
+                        <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+                    </div>
+                    <div class="grid grid-cols-7 gap-2 text-center text-sm">
+                        <div class="py-2">1</div><div class="py-2">2</div><div class="py-2">3</div><div class="py-2">4</div><div class="py-2">5</div><div class="py-2">6</div><div class="py-2">7</div>
+                        <div class="py-2 rounded bg-yellow-400 text-teal-900 font-bold">8</div>
+                        <div class="py-2">9</div><div class="py-2">10</div><div class="py-2">11</div><div class="py-2">12</div><div class="py-2">13</div><div class="py-2">14</div><div class="py-2">15</div>
+                        <div class="py-2">16</div><div class="py-2">17</div><div class="py-2">18</div><div class="py-2">19</div><div class="py-2">20</div><div class="py-2">21</div>
+                        <div class="py-2 rounded bg-yellow-400 text-teal-900 font-bold">22</div>
+                        <div class="py-2">23</div><div class="py-2">24</div><div class="py-2">25</div><div class="py-2">26</div><div class="py-2">27</div><div class="py-2">28</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 flex items-center text-gray-700">
+            <div class="w-6 h-6 bg-yellow-400 rounded mr-3"></div>
+            <span class="text-lg">= Days with Lessons</span>
+        </div>
+    </section>
+
+    <!-- Qualify Section -->
+    <section id="qualify" class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-br from-cyan-50 to-blue-50">
+        <h2 class="text-5xl font-bold text-blue-600 mb-12">DO I QUALIFY?</h2>
+        
+        <div class="bg-white p-10 rounded-3xl shadow-2xl max-w-2xl w-full">
+            <p class="text-xl text-gray-700 mb-8 font-semibold">
+                Before you sign up, make sure that your child:
+            </p>
+            
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <svg class="w-8 h-8 text-green-500 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-lg text-gray-800">Is 4 years or older</p>
+                </div>
+                
+                <div class="flex items-start">
+                    <svg class="w-8 h-8 text-green-500 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-lg text-gray-800">Is potty trained</p>
+                </div>
+                
+                <div class="flex items-start">
+                    <svg class="w-8 h-8 text-green-500 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-lg text-gray-800">
+                        Comes from a low income household according to the 
+                        <a href="https://www.cjhrc.org/images/New_Jersey_State_Income_Limits.pdf" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="text-blue-600 underline hover:text-blue-800">
+                            "2025 AFFORDABLE HOUSING REGIONAL INCOME LIMITS BY HOUSEHOLD SIZE"
+                        </a>
+                    </p>
+                </div>
+                
+                <div class="flex items-start">
+                    <svg class="w-8 h-8 text-green-500 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-lg text-gray-800">(mostly) Speaks and understands English</p>
+                </div>
+            </div>
+            
+            <button onclick="showModal()" class="mt-10 bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all w-full transform hover:scale-105">
+                Confirm
+            </button>
+            
+            <p class="text-sm text-gray-500 mt-4 text-center italic">
+                Your name will not be shared
+            </p>
+        </div>
+    </section>
+
+    <!-- Sign Up Section -->
+    <section id="signup" class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-white">
+        <h2 class="text-5xl font-bold text-blue-600 mb-12">HOW TO SIGN UP?</h2>
+        
+        <div class="bg-gradient-to-br from-blue-500 to-cyan-500 p-12 rounded-3xl shadow-2xl max-w-2xl w-full text-white text-center">
+            <h3 class="text-3xl font-bold mb-8">SCAN QR!</h3>
+            
+            <div class="bg-white p-8 rounded-2xl inline-block mb-8">
+                <img src="https://i.imgur.com/DHkWNFX.png" alt="QR Code" class="w-64 h-64 object-contain">
+            </div>
+            
+            <p class="mb-8">or, <a href="https://forms.gle/eD3GgxTWggPaYz5K6" target="_blank" class="text-yellow-300 hover:text-yellow-200 underline font-semibold">click here</a>.</p>
+            
+            <p class="text-xl mb-8">
+                The form will close once the session is full
+            </p>
+            
+            <div class="bg-white bg-opacity-20 backdrop-blur rounded-xl p-6">
+                <p class="text-lg mb-2">Questions or suggestions?</p>
+                <p class="text-2xl font-bold">REACH OUT!</p>
+                <a href="mailto:falconswimoutreach@gmail.com" class="inline-block mt-4 text-yellow-300 hover:text-yellow-200 underline text-lg">
+                    falconswimoutreach@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="qualifyModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-6 z-50">
+        <div class="bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl">
+            <h3 class="text-2xl font-bold text-blue-600 mb-4">Thank you for confirming!</h3>
+            <p class="text-gray-700 mb-6">
+                If your child meets all the requirements, please proceed to the sign-up section.
+            </p>
+            <a href="#signup" onclick="hideModal()" class="block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all w-full font-semibold text-center">
+                Proceed to Sign Up
+            </a>
+            <button onclick="hideModal()" class="mt-3 text-gray-600 hover:text-gray-800 w-full">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Back to Top Button -->
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="fixed bottom-8 right-8 bg-blue-600 text-white p-4 rounded-full shadow-xl hover:bg-blue-700 transition-all hover:scale-110 z-40">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
+    <script>
+        function showModal() {
+            document.getElementById('qualifyModal').classList.remove('hidden');
+        }
+        
+        function hideModal() {
+            document.getElementById('qualifyModal').classList.add('hidden');
+        }
+    </script>
+
+</body>
+</html>
